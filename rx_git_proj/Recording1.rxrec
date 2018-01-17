@@ -1248,6 +1248,18 @@ iigAooooAKKKKADvRR3ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAO9FFFA
 BRRRQAUUUUAFFFFABRRRQAUUUUAf/9k=
 			</helperscreenshot>
 		</mouseitem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="my change"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="1a0d41ff-78b8-4123-a223-a9386a29186c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="8751b1f6-1c89-4c74-b9a5-60026491d346"

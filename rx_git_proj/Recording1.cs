@@ -95,6 +95,8 @@ namespace rx_git_proj
             repo.MainForm.Close.Click("31;22");
             Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "User", "my change", new RecordItemIndex(4));
+            
         }
 
 #region Image Feature Data
