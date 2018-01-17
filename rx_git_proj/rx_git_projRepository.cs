@@ -68,7 +68,7 @@ namespace rx_git_proj
         /// <summary>
         /// The KeyPromptForm folder.
         /// </summary>
-        [RepositoryFolder("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+        [RepositoryFolder("ecdb047a-c8cb-4b69-a870-814d9142d037")]
         public virtual rx_git_projRepositoryFolders.KeyPromptFormAppFolder KeyPromptForm
         {
             get { return _keypromptform; }
@@ -77,7 +77,7 @@ namespace rx_git_proj
         /// <summary>
         /// The MainForm folder.
         /// </summary>
-        [RepositoryFolder("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+        [RepositoryFolder("4ab20fab-7830-4810-a781-b4a8a74decde")]
         public virtual rx_git_projRepositoryFolders.MainFormAppFolder MainForm
         {
             get { return _mainform; }
@@ -93,7 +93,7 @@ namespace rx_git_proj
         /// <summary>
         /// The KeyPromptFormAppFolder folder.
         /// </summary>
-        [RepositoryFolder("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+        [RepositoryFolder("ecdb047a-c8cb-4b69-a870-814d9142d037")]
         public partial class KeyPromptFormAppFolder : RepoGenBaseFolder
         {
             RepoItemInfo _mbtncancelInfo;
@@ -102,15 +102,15 @@ namespace rx_git_proj
             /// Creates a new KeyPromptForm  folder.
             /// </summary>
             public KeyPromptFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("KeyPromptForm", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, true, "d89d979a-d184-453b-b761-c4f0c0e83aa6", "")
+                    base("KeyPromptForm", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, true, "ecdb047a-c8cb-4b69-a870-814d9142d037", "")
             {
-                _mbtncancelInfo = new RepoItemInfo(this, "MBtnCancel", "button[@controlname='m_btnCancel']", 30000, null, "2356a09e-fdf9-4ad7-ba2d-33ae4a087b65");
+                _mbtncancelInfo = new RepoItemInfo(this, "MBtnCancel", "button[@controlname='m_btnCancel']", 30000, null, "1210487f-a929-47ce-b9cf-1efed63599f2");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+            [RepositoryItem("ecdb047a-c8cb-4b69-a870-814d9142d037")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -122,7 +122,7 @@ namespace rx_git_proj
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+            [RepositoryItemInfo("ecdb047a-c8cb-4b69-a870-814d9142d037")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -134,7 +134,7 @@ namespace rx_git_proj
             /// <summary>
             /// The MBtnCancel item.
             /// </summary>
-            [RepositoryItem("2356a09e-fdf9-4ad7-ba2d-33ae4a087b65")]
+            [RepositoryItem("1210487f-a929-47ce-b9cf-1efed63599f2")]
             public virtual Ranorex.Button MBtnCancel
             {
                 get
@@ -146,7 +146,7 @@ namespace rx_git_proj
             /// <summary>
             /// The MBtnCancel item info.
             /// </summary>
-            [RepositoryItemInfo("2356a09e-fdf9-4ad7-ba2d-33ae4a087b65")]
+            [RepositoryItemInfo("1210487f-a929-47ce-b9cf-1efed63599f2")]
             public virtual RepoItemInfo MBtnCancelInfo
             {
                 get
@@ -159,24 +159,26 @@ namespace rx_git_proj
         /// <summary>
         /// The MainFormAppFolder folder.
         /// </summary>
-        [RepositoryFolder("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+        [RepositoryFolder("4ab20fab-7830-4810-a781-b4a8a74decde")]
         public partial class MainFormAppFolder : RepoGenBaseFolder
         {
+            RepoItemInfo _fileInfo;
             RepoItemInfo _closeInfo;
 
             /// <summary>
             /// Creates a new MainForm  folder.
             /// </summary>
             public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "4181cb5d-d645-434a-b9f0-ba128b575ead", "")
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "4ab20fab-7830-4810-a781-b4a8a74decde", "")
             {
-                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "526fa9ef-dfdc-441a-9ae3-94def16fdc66");
+                _fileInfo = new RepoItemInfo(this, "File", "?/?/menuitem[@accessiblename='File']", 30000, null, "77c44710-d732-4437-882b-9a4f9ad56310");
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "0c976ae9-b751-41d4-ac4e-beb956c744aa");
             }
 
             /// <summary>
             /// The Self item.
             /// </summary>
-            [RepositoryItem("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+            [RepositoryItem("4ab20fab-7830-4810-a781-b4a8a74decde")]
             public virtual Ranorex.Form Self
             {
                 get
@@ -188,7 +190,7 @@ namespace rx_git_proj
             /// <summary>
             /// The Self item info.
             /// </summary>
-            [RepositoryItemInfo("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+            [RepositoryItemInfo("4ab20fab-7830-4810-a781-b4a8a74decde")]
             public virtual RepoItemInfo SelfInfo
             {
                 get
@@ -198,9 +200,33 @@ namespace rx_git_proj
             }
 
             /// <summary>
+            /// The File item.
+            /// </summary>
+            [RepositoryItem("77c44710-d732-4437-882b-9a4f9ad56310")]
+            public virtual Ranorex.MenuItem File
+            {
+                get
+                {
+                    return _fileInfo.CreateAdapter<Ranorex.MenuItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The File item info.
+            /// </summary>
+            [RepositoryItemInfo("77c44710-d732-4437-882b-9a4f9ad56310")]
+            public virtual RepoItemInfo FileInfo
+            {
+                get
+                {
+                    return _fileInfo;
+                }
+            }
+
+            /// <summary>
             /// The Close item.
             /// </summary>
-            [RepositoryItem("526fa9ef-dfdc-441a-9ae3-94def16fdc66")]
+            [RepositoryItem("0c976ae9-b751-41d4-ac4e-beb956c744aa")]
             public virtual Ranorex.Button Close
             {
                 get
@@ -212,7 +238,7 @@ namespace rx_git_proj
             /// <summary>
             /// The Close item info.
             /// </summary>
-            [RepositoryItemInfo("526fa9ef-dfdc-441a-9ae3-94def16fdc66")]
+            [RepositoryItemInfo("0c976ae9-b751-41d4-ac4e-beb956c744aa")]
             public virtual RepoItemInfo CloseInfo
             {
                 get

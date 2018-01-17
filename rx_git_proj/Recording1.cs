@@ -83,12 +83,16 @@ namespace rx_git_proj
             Host.Local.RunApplication("C:\\Program Files (x86)\\KeePass Password Safe 2\\KeePass.exe", "", "C:\\Program Files (x86)\\KeePass Password Safe 2", false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm.MBtnCancel' at 49;15.", repo.KeyPromptForm.MBtnCancelInfo, new RecordItemIndex(1));
-            repo.KeyPromptForm.MBtnCancel.Click("49;15");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'KeyPromptForm.MBtnCancel' at 63;15.", repo.KeyPromptForm.MBtnCancelInfo, new RecordItemIndex(1));
+            repo.KeyPromptForm.MBtnCancel.Click("63;15");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Close' at 33;12.", repo.MainForm.CloseInfo, new RecordItemIndex(2));
-            repo.MainForm.Close.Click("33;12");
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'MainForm.File'.", repo.MainForm.FileInfo, new RecordItemIndex(2));
+            Validate.Exists(repo.MainForm.FileInfo);
+            Delay.Milliseconds(100);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'MainForm.Close' at 31;22.", repo.MainForm.CloseInfo, new RecordItemIndex(3));
+            repo.MainForm.Close.Click("31;22");
             Delay.Milliseconds(200);
             
         }
