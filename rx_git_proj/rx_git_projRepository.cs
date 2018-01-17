@@ -27,6 +27,8 @@ namespace rx_git_proj
     public partial class rx_git_projRepository : RepoGenBaseFolder
     {
         static rx_git_projRepository instance = new rx_git_projRepository();
+        rx_git_projRepositoryFolders.KeyPromptFormAppFolder _keypromptform;
+        rx_git_projRepositoryFolders.MainFormAppFolder _mainform;
 
         /// <summary>
         /// Gets the singleton class instance representing the rx_git_projRepository element repository.
@@ -43,6 +45,8 @@ namespace rx_git_proj
         public rx_git_projRepository() 
             : base("rx_git_projRepository", "/", null, 0, false, "64652b2f-ccf9-4858-a587-eb5049a1e303", ".\\RepositoryImages\\rx_git_projRepository64652b2f.rximgres")
         {
+            _keypromptform = new rx_git_projRepositoryFolders.KeyPromptFormAppFolder(this);
+            _mainform = new rx_git_projRepositoryFolders.MainFormAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +64,24 @@ namespace rx_git_proj
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The KeyPromptForm folder.
+        /// </summary>
+        [RepositoryFolder("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+        public virtual rx_git_projRepositoryFolders.KeyPromptFormAppFolder KeyPromptForm
+        {
+            get { return _keypromptform; }
+        }
+
+        /// <summary>
+        /// The MainForm folder.
+        /// </summary>
+        [RepositoryFolder("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+        public virtual rx_git_projRepositoryFolders.MainFormAppFolder MainForm
+        {
+            get { return _mainform; }
+        }
     }
 
     /// <summary>
@@ -68,6 +90,138 @@ namespace rx_git_proj
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class rx_git_projRepositoryFolders
     {
+        /// <summary>
+        /// The KeyPromptFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+        public partial class KeyPromptFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _mbtncancelInfo;
+
+            /// <summary>
+            /// Creates a new KeyPromptForm  folder.
+            /// </summary>
+            public KeyPromptFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("KeyPromptForm", "/form[@controlname='KeyPromptForm']", parentFolder, 30000, null, true, "d89d979a-d184-453b-b761-c4f0c0e83aa6", "")
+            {
+                _mbtncancelInfo = new RepoItemInfo(this, "MBtnCancel", "button[@controlname='m_btnCancel']", 30000, null, "2356a09e-fdf9-4ad7-ba2d-33ae4a087b65");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("d89d979a-d184-453b-b761-c4f0c0e83aa6")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The MBtnCancel item.
+            /// </summary>
+            [RepositoryItem("2356a09e-fdf9-4ad7-ba2d-33ae4a087b65")]
+            public virtual Ranorex.Button MBtnCancel
+            {
+                get
+                {
+                    return _mbtncancelInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MBtnCancel item info.
+            /// </summary>
+            [RepositoryItemInfo("2356a09e-fdf9-4ad7-ba2d-33ae4a087b65")]
+            public virtual RepoItemInfo MBtnCancelInfo
+            {
+                get
+                {
+                    return _mbtncancelInfo;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The MainFormAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+        public partial class MainFormAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _closeInfo;
+
+            /// <summary>
+            /// Creates a new MainForm  folder.
+            /// </summary>
+            public MainFormAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("MainForm", "/form[@controlname='MainForm']", parentFolder, 30000, null, true, "4181cb5d-d645-434a-b9f0-ba128b575ead", "")
+            {
+                _closeInfo = new RepoItemInfo(this, "Close", "?/?/button[@accessiblename='Close']", 30000, null, "526fa9ef-dfdc-441a-9ae3-94def16fdc66");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("4181cb5d-d645-434a-b9f0-ba128b575ead")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Close item.
+            /// </summary>
+            [RepositoryItem("526fa9ef-dfdc-441a-9ae3-94def16fdc66")]
+            public virtual Ranorex.Button Close
+            {
+                get
+                {
+                    return _closeInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Close item info.
+            /// </summary>
+            [RepositoryItemInfo("526fa9ef-dfdc-441a-9ae3-94def16fdc66")]
+            public virtual RepoItemInfo CloseInfo
+            {
+                get
+                {
+                    return _closeInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
