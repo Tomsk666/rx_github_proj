@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="rx_git_proj"
+      id="94b30156-4288-4c22-a887-d43112767978"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="rx_git_proj"
+      id="94b30156-4288-4c22-a887-d43112767978"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
